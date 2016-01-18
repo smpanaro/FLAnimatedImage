@@ -8,9 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		0C22DAEC1BCABF4F006E1D3B /* FLAnimatedImage.h in Headers */ = {isa = PBXBuildFile; fileRef = 0C22DAE71BCABF4F006E1D3B /* FLAnimatedImage.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		0C22DAED1BCABF4F006E1D3B /* FLAnimatedImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C22DAE81BCABF4F006E1D3B /* FLAnimatedImage.m */; settings = {ASSET_TAGS = (); }; };
+		0C22DAED1BCABF4F006E1D3B /* FLAnimatedImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C22DAE81BCABF4F006E1D3B /* FLAnimatedImage.m */; };
 		0C22DAEE1BCABF4F006E1D3B /* FLAnimatedImageView.h in Headers */ = {isa = PBXBuildFile; fileRef = 0C22DAE91BCABF4F006E1D3B /* FLAnimatedImageView.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		0C22DAEF1BCABF4F006E1D3B /* FLAnimatedImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C22DAEA1BCABF4F006E1D3B /* FLAnimatedImageView.m */; settings = {ASSET_TAGS = (); }; };
+		0C22DAEF1BCABF4F006E1D3B /* FLAnimatedImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C22DAEA1BCABF4F006E1D3B /* FLAnimatedImageView.m */; };
+		AA4A349A1C4D5C0500645F8F /* FLAnimatedImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C22DAE81BCABF4F006E1D3B /* FLAnimatedImage.m */; };
+		AA4A349B1C4D5C0500645F8F /* FLAnimatedImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C22DAEA1BCABF4F006E1D3B /* FLAnimatedImageView.m */; };
+		AA4A349C1C4D5C1900645F8F /* FLAnimatedImage.h in Headers */ = {isa = PBXBuildFile; fileRef = 0C22DAE71BCABF4F006E1D3B /* FLAnimatedImage.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AA4A349D1C4D5C1900645F8F /* FLAnimatedImageView.h in Headers */ = {isa = PBXBuildFile; fileRef = 0C22DAE91BCABF4F006E1D3B /* FLAnimatedImageView.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,10 +24,19 @@
 		0C22DAEA1BCABF4F006E1D3B /* FLAnimatedImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FLAnimatedImageView.m; sourceTree = "<group>"; };
 		0C22DAEB1BCABF4F006E1D3B /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		92C9BC0C1B199DC500D79B06 /* FLAnimatedImage.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FLAnimatedImage.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AA4A34921C4D5BE000645F8F /* FLAnimatedImage.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FLAnimatedImage.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AA4A34961C4D5BE000645F8F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		92C9BC081B199DC500D79B06 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AA4A348E1C4D5BE000645F8F /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -49,6 +62,7 @@
 			isa = PBXGroup;
 			children = (
 				0C22DAE61BCABF4F006E1D3B /* FLAnimatedImage */,
+				AA4A34931C4D5BE000645F8F /* FLAnimatedImage-tvOS */,
 				92C9BC0D1B199DC500D79B06 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -57,8 +71,17 @@
 			isa = PBXGroup;
 			children = (
 				92C9BC0C1B199DC500D79B06 /* FLAnimatedImage.framework */,
+				AA4A34921C4D5BE000645F8F /* FLAnimatedImage.framework */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		AA4A34931C4D5BE000645F8F /* FLAnimatedImage-tvOS */ = {
+			isa = PBXGroup;
+			children = (
+				AA4A34961C4D5BE000645F8F /* Info.plist */,
+			);
+			path = "FLAnimatedImage-tvOS";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -70,6 +93,15 @@
 			files = (
 				0C22DAEE1BCABF4F006E1D3B /* FLAnimatedImageView.h in Headers */,
 				0C22DAEC1BCABF4F006E1D3B /* FLAnimatedImage.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AA4A348F1C4D5BE000645F8F /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AA4A349C1C4D5C1900645F8F /* FLAnimatedImage.h in Headers */,
+				AA4A349D1C4D5C1900645F8F /* FLAnimatedImageView.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -94,6 +126,24 @@
 			productReference = 92C9BC0C1B199DC500D79B06 /* FLAnimatedImage.framework */;
 			productType = "com.apple.product-type.framework";
 		};
+		AA4A34911C4D5BE000645F8F /* FLAnimatedImage-tvOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AA4A34991C4D5BE000645F8F /* Build configuration list for PBXNativeTarget "FLAnimatedImage-tvOS" */;
+			buildPhases = (
+				AA4A348D1C4D5BE000645F8F /* Sources */,
+				AA4A348E1C4D5BE000645F8F /* Frameworks */,
+				AA4A348F1C4D5BE000645F8F /* Headers */,
+				AA4A34901C4D5BE000645F8F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "FLAnimatedImage-tvOS";
+			productName = "FLAnimatedImage-tvOS";
+			productReference = AA4A34921C4D5BE000645F8F /* FLAnimatedImage.framework */;
+			productType = "com.apple.product-type.framework";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -105,6 +155,9 @@
 				TargetAttributes = {
 					92C9BC0B1B199DC500D79B06 = {
 						CreatedOnToolsVersion = 6.3.1;
+					};
+					AA4A34911C4D5BE000645F8F = {
+						CreatedOnToolsVersion = 7.2;
 					};
 				};
 			};
@@ -121,12 +174,20 @@
 			projectRoot = "";
 			targets = (
 				92C9BC0B1B199DC500D79B06 /* FLAnimatedImage */,
+				AA4A34911C4D5BE000645F8F /* FLAnimatedImage-tvOS */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
 		92C9BC0A1B199DC500D79B06 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AA4A34901C4D5BE000645F8F /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -142,6 +203,15 @@
 			files = (
 				0C22DAED1BCABF4F006E1D3B /* FLAnimatedImage.m in Sources */,
 				0C22DAEF1BCABF4F006E1D3B /* FLAnimatedImageView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AA4A348D1C4D5BE000645F8F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AA4A349A1C4D5C0500645F8F /* FLAnimatedImage.m in Sources */,
+				AA4A349B1C4D5C0500645F8F /* FLAnimatedImageView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -271,6 +341,45 @@
 			};
 			name = Release;
 		};
+		AA4A34971C4D5BE000645F8F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "FLAnimatedImage-tvOS/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.flipboard.FLAnimatedImage.tvOS;
+				PRODUCT_NAME = FLAnimatedImage;
+				SDKROOT = appletvos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 9.1;
+			};
+			name = Debug;
+		};
+		AA4A34981C4D5BE000645F8F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "FLAnimatedImage-tvOS/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.flipboard.FLAnimatedImage.tvOS;
+				PRODUCT_NAME = FLAnimatedImage;
+				SDKROOT = appletvos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 9.1;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -288,6 +397,15 @@
 			buildConfigurations = (
 				92C9BC231B199DC600D79B06 /* Debug */,
 				92C9BC241B199DC600D79B06 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AA4A34991C4D5BE000645F8F /* Build configuration list for PBXNativeTarget "FLAnimatedImage-tvOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AA4A34971C4D5BE000645F8F /* Debug */,
+				AA4A34981C4D5BE000645F8F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
